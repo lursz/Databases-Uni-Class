@@ -74,6 +74,7 @@ class Program3
 /* -------------------------------------------------------------------------- */
 /*                                  ZADANIE 4                                 */
 /* -------------------------------------------------------------------------- */
+
 class Program4
 {
     static void Main(string[] args)
@@ -100,6 +101,7 @@ class Program4
         Random random = new Random(seed);
         StreamWriter sw = new StreamWriter(filename);
 
+
         if (is_integer)
         {
             int min_value = int.Parse(args[2]);
@@ -107,6 +109,7 @@ class Program4
 
             for (int i = 0; i < n; i++)
             {
+
                 int number = random.Next(min_value, max_value);
                 sw.WriteLine(number);
             }
@@ -124,6 +127,7 @@ class Program4
             }
 
         }
+    sw.Close();
     }
 }
 
@@ -132,6 +136,7 @@ class Program4
 /* -------------------------------------------------------------------------- */
 /*                                  ZADANIE 5                                 */
 /* -------------------------------------------------------------------------- */
+
 class Program5
 {
     static void Main(string[] args)
